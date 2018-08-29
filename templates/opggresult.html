@@ -2,5 +2,10 @@
 {% block title %} 롤 전적 검색 {% endblock %}
 {% block body %} 
 <h1 class="text-center"> {{name}} 소환사님 </h1> <br>
-<h2 class="text-center"> 승리 : {{wins}}</h2>
+<h2 class="text-center"> 티어 : {{list[0]}}</h2><br>
+<h2 class="text-center"> 포인트 : {{list[1]}}</h2><br>
+<h2 class="text-center"> 승리 : {{list[2]}}</h2><br>
+<h2 class="text-center"> 패배 : {{list[3]}}</h2><br>
+<h2 class="text-center"> 승률 : {{list[4]}}</h2><br>
+
 {% endblock %}

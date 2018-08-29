@@ -80,6 +80,5 @@ def opggresult() :
     wins = bs4.select_one('div.TierInfo > span.WinLose > span.wins').text
     losses = bs4.select_one('div.TierInfo > span.WinLose > span.losses').text
     ratio = bs4.select_one('div.TierInfo > span.WinLose > span.winratio').text
-    
-    return render_template("opggresult.html", name = name, wins = wins)
-
+    list =[tier,point,wins,losses,ratio]
+    return render_template("opggresult.html", name = name ,list = list)
